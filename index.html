@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +15,7 @@
             padding: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column; /* Changed to column layout */
             align-items: center;
             justify-content: center;
         }
@@ -24,23 +24,17 @@
         }
         .profile-img {
             border-radius: 50%;
-            max-width: 50%; /* Adjusted size to 50% */
+            max-width: 50%;
             height: auto;
-            margin-right: 20px; /* Added margin to the right for space */
-            margin-left: 20px; /* Added margin to the left for space */
-            display: inline-block; /* Center the profile image */
-            vertical-align: middle; /* Align the image vertically */
+            margin-bottom: 20px; /* Added margin to the bottom for space */
         }
         .icon-container {
-            display: inline-block; /* Center the icon container */
-            text-align: left; /* Align text to the left within the container */
-            vertical-align: middle; /* Align the container vertically */
+            text-align: center; /* Center the icon container */
         }
         .icon {
-            font-size: 1em; /* Adjusted size to 50% */
+            font-size: 1em;
             color: #007bff;
-            margin-bottom: 10px;
-            display: block;
+            margin: 0 10px; /* Added margin to the icons for spacing */
             text-decoration: none;
         }
     </style>
@@ -50,8 +44,6 @@
         <img src="ProfilePic.JPG" alt="Eryn Onym" class="profile-img">
         <div class="icon-container">
             <a href="mailto:itsnym@proton.me" class="icon" title="email"><img src="email.jpg" alt="email" style="max-width: 50%;"></a>
-            <a href="https://bandcamp.com/erynonym" class="icon" title="bandcamp"><img src="bandcamp.png" alt="bandcamp" style="max-width: 50%;"></a>
-            <a href="https://app.thestorygraph.com/profile/erynonym" class="icon" title="storygraph"><img src="Storygraph.png" alt="storygraph" style="max-width: 50%;"></a>
         </div>
     </div>
 
